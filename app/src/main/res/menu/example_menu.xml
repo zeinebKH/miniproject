@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <item android:id="@+id/homeIcon"
+            android:icon="@drawable/ic_home_black_24dp"
+            app:showAsAction="ifRoom"
+            android:title="home"/>
+
+        <item android:id="@+id/ajouter"
+            android:title="Ajouter"
+            app:showAsAction="never"/>
+        <item android:id="@+id/modifier"
+            android:title="Modifier"
+            app:showAsAction="never"/>
+        <item android:id="@+id/supp"
+            android:title="Supprimer"
+            app:showAsAction="never"/>
+
+        <item android:id="@+id/recherche"
+            android:title="Recherche"
+            app:showAsAction="never">
+
+                <menu>
+                    <item  android:id="@+id/rechparVille"
+                        android:title="Ville"/>
+                    <item  android:id="@+id/rechparPrix"
+                        android:title="Prix"/>
+                </menu>
+        </item>
+
+</menu>

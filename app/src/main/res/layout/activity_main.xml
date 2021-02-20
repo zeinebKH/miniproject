@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/images"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="480dip"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginTop="30dip"
+                    android:layout_weight="1"
+                    android:layerType="none"
+                    android:text="Ville Depart"
+                    android:textColor="#070709"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginTop="30dip"
+                    android:layout_weight="1"
+                    android:layerType="none"
+                    android:text="Ville Arrivee"
+                    android:textColor="#070709"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginTop="30dip"
+                    android:layout_weight="1"
+                    android:layerType="none"
+                    android:text="Prix"
+                    android:textColor="#070709"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginTop="30dip"
+                    android:layout_weight="1"
+                    android:layerType="none"
+                    android:text="Duree"
+                    android:textColor="#070709"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/TxtDepart"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="20dip"
+                    android:layout_weight="1"
+                    android:width="50dip"
+                    android:ems="10"
+                    android:hint="Ville de Depart"
+                    android:inputType="textPersonName"
+                    android:maxHeight="50dip"
+                    android:scrollbarSize="6dp"
+                    android:textColor="#F70C0000"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+                <EditText
+                    android:id="@+id/TxtArrivee"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="20dip"
+                    android:layout_weight="1"
+                    android:width="50dip"
+                    android:ems="10"
+                    android:hint="Ville d'arrivee"
+                    android:inputType="textPersonName"
+                    android:maxHeight="50dip"
+                    android:scrollbarSize="6dp"
+                    android:textColor="#F70C0000"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+                <EditText
+                    android:id="@+id/TxtPrix"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="20dip"
+                    android:layout_weight="1"
+                    android:width="50dip"
+                    android:ems="10"
+                    android:hint="Prix"
+                    android:inputType="textPersonName"
+                    android:maxHeight="50dip"
+                    android:scrollbarSize="6dp"
+                    android:textColor="#F70C0000"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+                <EditText
+                    android:id="@+id/TxtDuree"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="20dip"
+                    android:layout_weight="1"
+                    android:width="50dip"
+                    android:ems="10"
+                    android:hint="Duree"
+                    android:inputType="textPersonName"
+                    android:maxHeight="50dip"
+                    android:scrollbarSize="6dp"
+                    android:textColor="#F70C0000"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:orientation="vertical"></LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnAjouter"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dip"
+                    android:layout_marginTop="10dip"
+                    android:layout_marginRight="30dip"
+                    android:layout_marginBottom="10dip"
+                    android:height="@android:dimen/app_icon_size"
+                    android:background="#153A8D"
+                    android:drawableBottom="@color/colorAccent"
+                    android:lineSpacingExtra="8sp"
+                    android:minWidth="20dip"
+                    android:text="Ajouter"
+                    android:textColorLink="#94752B2B"
+                    android:textSize="18sp"
+                    android:typeface="normal"
+                    android:verticalScrollbarPosition="defaultPosition"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/btnModif"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dip"
+                    android:layout_marginRight="30dip"
+                    android:layout_marginBottom="10dip"
+                    android:height="@android:dimen/app_icon_size"
+                    android:background="#F14E07"
+                    android:drawableBottom="@color/colorPrimary"
+                    android:lineSpacingExtra="8sp"
+                    android:minWidth="10dip"
+                    android:text="Modifier"
+                    android:textColorLink="#94752B2B"
+                    android:textSize="18sp"
+                    android:typeface="normal"
+                    android:verticalScrollbarPosition="defaultPosition"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/btnRecheche"
+                    style="@style/Widget.AppCompat.Button.Colored"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dip"
+                    android:layout_marginRight="30dip"
+                    android:height="@android:dimen/app_icon_size"
+                    android:background="#4DCE08"
+                    android:lineSpacingExtra="8sp"
+                    android:minWidth="20dip"
+                    android:text="Recherche"
+                    android:textColorLink="#94752B2B"
+                    android:textSize="18sp"
+                    android:typeface="normal"
+                    android:verticalScrollbarPosition="defaultPosition"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dip"
+                    android:layout_marginRight="100dip"
+                    android:text="Ma Base de Données"
+                    android:textColor="#020202"
+                    android:textSize="14sp" />
+
+                <ListView
+                    android:id="@+id/listTable"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
